@@ -10,7 +10,7 @@ const Home: NextPage = () => {
 
 
       
-      <div className='bg-black w-3/12 h-full'>
+      <div className='bg-black w-3/12 h-screen'>
 
         <div className='mx-24'>
 
