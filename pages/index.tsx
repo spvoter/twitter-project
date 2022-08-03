@@ -83,9 +83,11 @@ const Home: NextPage = () => {
 
 
       <div className='bg-blue-500 w-5/12 h-screen'>
+
+
         <div className='bg-blue-700 w-full h-10 flex flex-row justify-between py-2 px-4'>
-          <h1>Notifications</h1>
-          <a>sign</a>
+          <h1 className='text-white text-lg font-semibold'>Notifications</h1>
+          <a><img src='more-horizontal.svg'></img></a>
         </div>
 
         <div className='w-full h-10 flex flex-row'>
