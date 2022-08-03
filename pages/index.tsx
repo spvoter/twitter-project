@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import TwitterPost from './Components/TwitterPost'
 
 const Home: NextPage = () => {
   return (
@@ -82,60 +83,42 @@ const Home: NextPage = () => {
 
 
 
-      <div className='bg-blue-500 w-5/12 h-screen'>
+      <div className='bg-black w-5/12 h-screen'>
 
 
-        <div className='bg-blue-700 w-full h-10 flex flex-row justify-between py-2 px-4'>
-          <h1 className='text-white text-lg font-semibold'>Notifications</h1>
-          <a><img src='more-horizontal.svg'></img></a>
+        <div className='bg-black w-full h-16 flex flex-row justify-between py-2 px-4'>
+          <h1 className='text-white text-lg font-semibold py-3'>Notifications</h1>
+          <a className='py-3'><img src='more-horizontal.svg'></img></a>
         </div>
 
-        <div className='w-full h-10 flex flex-row'>
-          <div className='bg-blue-900 w-1/2 h-full flex flex-row justify-center py-2 px-4'>
-            <h1>Recent</h1>
+        <div className='w-full h-12 flex flex-row'>
+          <div className='bg-black w-1/2 h-full flex flex-row justify-center py-2 px-4 border-b-2 hover:border-y-2 border-slate-500'>
+            <h1 className='text-white text-base font-medium py-1'>Recent</h1>
           </div>
-          <div className='bg-blue-200 w-1/2 h-full flex flex-row justify-center py-2 px-4'>
-            <h1>All</h1>
+          <div className='bg-black w-1/2 h-full flex flex-row justify-center py-2 px-4 border-b-2 hover:border-y-2 border-slate-500'>
+            <h1 className='text-white text-base font-medium py-1'>All</h1>
           </div>
         </div>
 
-        <div className='bg-blue-300 w-full h-12 flex flex-row justify-center py-3'>
+        <div className='bg-black w-full h-12 flex flex-row justify-center py-3 border-b-2 border-slate-500'>
           <a><div></div></a>
-          <div>Show 2346 tweets</div>
+          <div className='text-blue-400 text-base font-medium'>Show 2346 tweets</div>
         </div>
 
-        <div className='bg-blue-400 w-full h-40 flex flex-row'>
-          <div>
-            <a><img src='ss'></img></a>
-          </div>
-          <div className='flex flex-col'>
-            <div>person</div>
-            <div>post text</div>
-            <div>likes and so on</div>
-          </div>
-        </div>
-
-        <div className='bg-blue-400 w-full h-40 flex flex-row'>
-          <div>
-            <a><img src='ss'></img></a>
-          </div>
-          <div className='flex flex-col'>
-            <div>person</div>
-            <div>post text</div>
-            <div>likes and so on</div>
-          </div>
-        </div>
+        
 
 
-        <div className='bg-blue-500 w-full h-40'>
-          <a><div></div></a>
-          <div>post text</div>
-        </div>
-        <div className='bg-blue-100 w-full h-40'>
-          <a><div></div></a>
-          <div>post text</div>
-        </div>
-      
+
+          <div className='flex flex-col py-4'>
+            <TwitterPost></TwitterPost>
+            <TwitterPost></TwitterPost>
+            <TwitterPost></TwitterPost>
+            <TwitterPost></TwitterPost>
+          </div>
+
+        
+        
+
       </div>
 
 
